@@ -8,11 +8,13 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       }
       authorDatabaseId
       authorId
+      bodyClasses
       categories(first: 100) {
         nodes {
           id
         }
       }
+      coAuthors
       commentCount
       commentStatus
       comments(first: 100) {
@@ -54,10 +56,46 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       modifiedGmt
       pingStatus
       pinged
+      post_category {
+        fieldGroupName
+        postCategory
+      }
       postFormats(first: 100) {
         nodes {
           id
         }
+      }
+      seo {
+        breadcrumbs {
+          text
+          url
+        }
+        canonical
+        focuskw
+        metaDesc
+        metaKeywords
+        metaRobotsNofollow
+        metaRobotsNoindex
+        opengraphAuthor
+        opengraphDescription
+        opengraphImage {
+          __typename
+          id
+        }
+        opengraphModifiedTime
+        opengraphPublishedTime
+        opengraphPublisher
+        opengraphSiteName
+        opengraphTitle
+        opengraphType
+        opengraphUrl
+        title
+        twitterDescription
+        twitterImage {
+          __typename
+          id
+        }
+        twitterTitle
       }
       slug
       status
@@ -67,6 +105,15 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
         }
       }
       template {
+        banner {
+          bannerH1
+          bannerH2
+          fieldGroupName
+          heroImage {
+            __typename
+            id
+          }
+        }
         templateName
         __typename
       }

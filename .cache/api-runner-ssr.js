@@ -1,6 +1,6 @@
 var plugins = [{
       name: 'gatsby-plugin-image',
-      plugin: require('E:/twenty-twenty-starter/node_modules/gatsby-plugin-image/gatsby-ssr'),
+      plugin: require('E:/mercury_towers/node_modules/gatsby-plugin-image/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

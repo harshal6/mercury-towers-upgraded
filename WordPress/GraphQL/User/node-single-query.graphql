@@ -12,6 +12,15 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
       url
       width
     }
+    banner {
+      bannerH1
+      bannerH2
+      fieldGroupName
+      heroImage {
+        __typename
+        id
+      }
+    }
     capKey
     capabilities
     comments(first: 100) {

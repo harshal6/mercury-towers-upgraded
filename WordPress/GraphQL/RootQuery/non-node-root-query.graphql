@@ -34,11 +34,115 @@ query NON_NODE_QUERY {
     url
   }
 
+  getFooter {
+    copyrightText
+    sidebarOne
+    sidebarTwo
+
+    socialLinks {
+      iconName
+      iconUrl
+    }
+  }
+
+  getHeader {
+    favicon
+    siteLogoUrl
+    siteTagLine
+    siteTitle
+  }
+
   readingSettings {
     postsPerPage
   }
 
   schemaMd5
+
+  seo {
+    breadcrumbs {
+      archivePrefix
+      boldLast
+      enabled
+      homeText
+      notFoundText
+      prefix
+      searchPrefix
+      separator
+      showBlogPage
+    }
+
+    schema {
+      companyLogo {
+        __typename
+        id
+      }
+
+      companyName
+      companyOrPerson
+
+      logo {
+        __typename
+        id
+      }
+
+      personLogo {
+        __typename
+        id
+      }
+
+      siteName
+      siteUrl
+      wordpressSiteName
+    }
+
+    social {
+      facebook {
+        defaultImage {
+          __typename
+          id
+        }
+
+        url
+      }
+
+      instagram {
+        url
+      }
+
+      linkedIn {
+        url
+      }
+
+      mySpace {
+        url
+      }
+
+      pinterest {
+        metaTag
+        url
+      }
+
+      twitter {
+        cardType
+        username
+      }
+
+      wikipedia {
+        url
+      }
+
+      youTube {
+        url
+      }
+    }
+
+    webmaster {
+      baiduVerify
+      googleVerify
+      msVerify
+      yandexVerify
+    }
+  }
 
   viewer {
     id

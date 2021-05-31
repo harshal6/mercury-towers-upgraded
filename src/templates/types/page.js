@@ -4,6 +4,7 @@ import Layout from "../../components/Layout"
 import Seo from "../../components/Seo"
 import FeaturedMedia from "../../components/FeaturedMedia"
 import Pagelayout from "../../components/Pagelayout"
+import Banner from '../../components/banner'
 
 const page = ({ data }) => {
   const { page } = data
@@ -27,7 +28,7 @@ const page = ({ data }) => {
             />
           </div>
         </header>
-
+        <Banner/>
         <FeaturedMedia image={featuredImage} />
 
         <div className="post-inner thin">

@@ -17,6 +17,15 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
         }
       }
       authorIp
+      banner {
+        bannerH1
+        bannerH2
+        fieldGroupName
+        heroImage {
+          __typename
+          id
+        }
+      }
       commentedOn {
         node {
           id

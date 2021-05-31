@@ -13,6 +13,16 @@ query PREVIEW_QUERY($id: ID!) {
     }
     authorDatabaseId
     authorId
+    banner {
+      bannerH1
+      bannerH2
+      fieldGroupName
+      heroImage {
+        __typename
+        id
+      }
+    }
+    bodyClasses
     wpChildren: children(first: 100) {
       nodes {
         id
@@ -45,6 +55,58 @@ query PREVIEW_QUERY($id: ID!) {
     }
     featuredImageDatabaseId
     featuredImageId
+    frontPageMeta {
+      banner {
+        description
+        fieldGroupName
+        image {
+          __typename
+          id
+        }
+        pageLink {
+          __typename
+          ... on Page {
+            id
+          }
+        }
+        pageLinkText
+        title
+      }
+      featuredPostsSection {
+        featuredPosts {
+          __typename
+          ... on Post {
+            id
+          }
+        }
+        fieldGroupName
+        heading
+      }
+      fieldGroupName
+      searchSection {
+        backgroundImage {
+          __typename
+          id
+        }
+        fieldGroupName
+        searchLabel
+        taxonomies {
+          id
+        }
+        taxonomyIconOne {
+          __typename
+          id
+        }
+        taxonomyIconThree {
+          __typename
+          id
+        }
+        taxonomyIconTwo {
+          __typename
+          id
+        }
+      }
+    }
     guid
     id
     isFrontPage
@@ -68,9 +130,54 @@ query PREVIEW_QUERY($id: ID!) {
     }
     parentDatabaseId
     parentId
+    post_category {
+      fieldGroupName
+      postCategory
+    }
+    seo {
+      breadcrumbs {
+        text
+        url
+      }
+      canonical
+      focuskw
+      metaDesc
+      metaKeywords
+      metaRobotsNofollow
+      metaRobotsNoindex
+      opengraphAuthor
+      opengraphDescription
+      opengraphImage {
+        __typename
+        id
+      }
+      opengraphModifiedTime
+      opengraphPublishedTime
+      opengraphPublisher
+      opengraphSiteName
+      opengraphTitle
+      opengraphType
+      opengraphUrl
+      title
+      twitterDescription
+      twitterImage {
+        __typename
+        id
+      }
+      twitterTitle
+    }
     slug
     status
     template {
+      banner {
+        bannerH1
+        bannerH2
+        fieldGroupName
+        heroImage {
+          __typename
+          id
+        }
+      }
       templateName
       __typename
     }

@@ -1,0 +1,1 @@
+require("E:/mercury_towers/node_modules/gatsby/dist/utils/telemetry-server.js").default(53499)

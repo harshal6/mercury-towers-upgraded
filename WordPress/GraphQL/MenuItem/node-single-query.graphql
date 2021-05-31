@@ -1,5 +1,14 @@
 query SINGLE_CONTENT_QUERY($id: ID!) {
   menuItem(id: $id) {
+    banner {
+      bannerH1
+      bannerH2
+      fieldGroupName
+      heroImage {
+        __typename
+        id
+      }
+    }
     childItems(first: 100) {
       nodes {
         id

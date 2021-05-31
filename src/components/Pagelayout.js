@@ -9,6 +9,7 @@ import Insta from './instagram'
 import Contact from './contact'
 import Headingcontent from './headingcontent'
 import Eventscard from './eventscard'
+import Banner from './banner'
 
 
 const backdropClasses = " backdrop"
@@ -35,7 +36,7 @@ const Pagelayout = ({ children, bodyClassPage }) => {
       <MenuModal isActive={backdropActive} toggleBackdrop={toggleBackdrop} />
 
       <main id="site-content" role="main">
-        
+      
         
           {children} 
       </main>

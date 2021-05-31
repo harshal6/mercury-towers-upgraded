@@ -1,6 +1,15 @@
 query NODE_LIST_QUERY($first: Int!, $after: String) {
   menuItems(first: $first, after: $after) {
     nodes {
+      banner {
+        bannerH1
+        bannerH2
+        fieldGroupName
+        heroImage {
+          __typename
+          id
+        }
+      }
       childItems(first: 100) {
         nodes {
           id
