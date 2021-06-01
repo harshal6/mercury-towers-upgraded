@@ -1222,9 +1222,21 @@ font-family: var(--primary-font);
     height: 550px;
     justify-content: space-between;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     padding: 0;
 
+}
+#panel-w60b5dabd96887-0-0-0 .widget-title{
+  font-size: 14px;
+  margin: 0;
+}
+#panel-w60b5dabd96887-0-0-0 .textwidget{
+  font-size: 60px;
+  color: #fff;
+  max-width: 51%;
+}
+#panel-w60b5dabd96887-0-0-1{
+  display: none;
 }
 .home-carousel .carousel-control-prev{
   left: 0;
@@ -1346,15 +1358,22 @@ font-family: var(--primary-font);
 .lcp_excerpt{
   position: absolute;
 }
+.home-news .lcp_excerpt h3{
+  position: relative;
+  color: var(--color-black);
+  font-size: 20px;
+}
 .home-news .lcp_excerpt p{
   position: relative;
+  color: #838383;
+  font-size: 16px;
 }
-.home-news .lcp_excerpt p::before{
+.home-news .lcp_excerpt h3::before,.news-tab .lcp_excerpt .widget-title::before{
   content: 'NEWS';
   color: var(--color-burg);
   font-size: 16px;
   position: absolute;
-  top: -20px;
+  top: -25px;
   left: 0;
 }
  .home-news .lcp_catlist li .lcp_excerpt{
@@ -1576,4 +1595,71 @@ display: block;
 }
 #pg-12-6{
   margin: 90px 0;
+}
+#pg-226-2{
+  background: #F8F8F8;
+  padding: 177px 0;
+}
+#pg-226-2> .panel-grid-cell{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#pg-226-2> .panel-grid-cell .nav-link{
+  background: transparent;
+  color: var(--color-black);
+  position: relative;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+#pg-226-2> .panel-grid-cell .nav-link.active{
+  background: transparent;
+  color: var(--color-burg);
+  position: relative;
+}
+#panel-226-0-0-0 .widget-title{
+  margin: 94px 0 35px 0;
+  text-align: center;
+  color: var(--color-black);
+  font-size: 41px;
+}
+.news-tab .lcp_catlist{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.news-tab .lcp_catlist li{
+  max-width:43%;
+  margin-bottom: 95px;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+.news-tab .lcp_excerpt{
+  position: absolute;
+  max-width: 313px;
+  background: #F8F8F8;
+  bottom: 0;
+  padding: 51px 70px 5px 45px;
+}
+.news-tab .lcp_excerpt .widget-title{
+  font-size: 16px;
+  color: var(--color-black);
+  line-height: 31px;
+  position: relative;
+}
+.news-tab .lcp_excerpt .textwidget p{
+  font-size: 11px;
+  color: var(--color-black);
+}
+.news-tab li .gatsby-image-wrapper{
+ width: 100% !important;
+}
+#pg-226-2> .panel-grid-cell .nav-link.active:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  width: 45px;
+  height: 2px;
+  background: var(--color-burg);
 }
