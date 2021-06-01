@@ -28,6 +28,7 @@
     --color-prim-menu: #1c1c1c;
     --primary-font: Lato-regular;
     --primary-font-heading: Butler-light;
+    --primary-font-button: Playfair;
     --primary-size-xxs: 10px;
     --primary-size-xs: 12px;
     --primary-size-s: 14px;
@@ -898,6 +899,20 @@
   background: transparent;
   border: none;
   padding: 0 ;
+  font-family: var(--primary-font-button);
+  font-style: italic;
+  font-weight: normal;
+  position: relative;
+}
+.home-car-info button::after{
+  content: '';
+  background: url(./svg/arrow-right.svg);
+  width: 16px;
+    height: 16px;
+    right: -20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .banner-section>div.col-md-12{
   background-color: rgb(173, 131, 131);
