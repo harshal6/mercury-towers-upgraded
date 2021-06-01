@@ -10,5 +10,4 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "@popperjs/core/dist/umd/popper.min.js";
 import "jquery/dist/jquery"
 import "./src/assets/slick.css"
-import "./src/assets/slick.js"
-import "./src/assets/master.js"
+
