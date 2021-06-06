@@ -1785,4 +1785,137 @@ display: block;
 .contact-details-box h4{
   color: var(--color-burg);
 }
+.plan-tab ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 58.5%;
+  margin: 0 auto;
+  border: none;
+
+}
+.plan-tab ul li{
+  width: 33.33%;
+  margin: 0;
+}
+.plan-tab ul a.nav-link{
+  padding: 21px 0;
+  color: var(--color-black);
+  font-size: 14px;
+  letter-spacing: 4.62px;
+  border-bottom: 2px solid transparent;
+  border: none;
+  text-align: center;
+}
+.plan-tab ul a.nav-link.active{
+  color: var(--color-burg);
+  border-bottom: 2px solid var(--color-burg);
+}
+.plan-tab-inner #pills-home{
+  display: flex;
+}
+.plan-tab-inner #pills-home .nav-tabs{
+  width: 37%;
+    max-width: 100%;
+    flex: 0 0 37%;
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    padding: 63px 0 63px 0;
+    margin: 0;
+}
+.plan-tab-inner #pills-home .nav-tabs .nav-item{
+   width: 100%;
+   margin: 0 0 77px 0;
+}
+.plan-tab-inner #pills-home .nav-tabs .nav-link{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: none;
+  color: var(--color-black);
+  opacity: 0.6;
+  font-size: 30px;
+  padding-top: 88px;
+  position: relative;
+}
+.plan-tab-inner #pills-home .nav-tabs .nav-link::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  background: url(./images/icons8-bus-100.png) no-repeat;
+  background-size: cover;
+  transform: translateX(-50%);
+}
+.plan-tab-inner #pills-home .nav-tabs .nav-link.active{
+  opacity: 1;
+}
+
+.plan-tab-inner #pills-home .tab-content{
+   padding: 82px 11.11% 82px 10.11%;
+   background-color: var(--primary-back);
+}
+.plan-tab-inner #pills-home .tab-content h3{
+ margin: 0 0 30px 0;
+ font-size: 30px;
+ color: var(--color-black);
+}
+.plan-tab-inner #pills-home .tab-content p{
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  line-height: 2em;
+  color: #838383;
+ }
+ .plan-tab-inner #pills-home .tab-content p a{
+  margin: 0;
+  font-size: 14px;
+ letter-spacing: 4.62px;
+  text-transform: uppercase;
+  color: var(--color-burg);
+ }
+ .plan-banner{
+   position: relative;
+ }
+ .plan-banner .widget_text{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 1;
+}
+.plan-banner .widget_text h3{
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  line-height: 71px;
+}
+#panel-212-1-0-1{
+  margin-top: 2px;
+}
+.plan-banner .widget_text .textwidget{
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  line-height: 24px;
+}
+.plan-banner .widget_media_image{
+  margin: 0;
+}
+.plan-banner .widget_media_image .gatsby-image-wrapper{
+  width: 100% !important;
+}
+.news-archives{
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 550px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    padding: 0;
+    display: none;
+}
  
