@@ -1921,4 +1921,28 @@ display: block;
     padding: 0;
     display: none;
 }
- 
+.btn-wrap-see>.panel-grid-cell{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.btn-wrap-see>.panel-grid-cell .widget_sow-button{
+  margin: 0;
+}
+.btn-wrap-see>.panel-grid-cell .widget_sow-button a{
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-black);
+ letter-spacing: 4.62px;
+ text-transform: uppercase;
+ transition: all 0.3s linear;
+ padding: 21px 0;
+ border-bottom: 2px solid transparent;
+ display: inline-block;
+}
+.btn-wrap-see>.panel-grid-cell .widget_sow-button a:hover{
+  color: var(--color-burg);
+  border-bottom: 2px solid var(--color-burg);
+}
