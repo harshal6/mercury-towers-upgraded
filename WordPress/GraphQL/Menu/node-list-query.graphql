@@ -1,15 +1,6 @@
 query NODE_LIST_QUERY($first: Int!, $after: String) {
   menus(first: $first, after: $after) {
     nodes {
-      banner {
-        bannerH1
-        bannerH2
-        fieldGroupName
-        heroImage {
-          __typename
-          id
-        }
-      }
       count
       databaseId
       id

@@ -90,10 +90,6 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       }
       parentDatabaseId
       parentId
-      post_category {
-        fieldGroupName
-        postCategory
-      }
       seo {
         breadcrumbs {
           text
@@ -132,15 +128,6 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       srcSet
       status
       template {
-        banner {
-          bannerH1
-          bannerH2
-          fieldGroupName
-          heroImage {
-            __typename
-            id
-          }
-        }
         templateName
         __typename
       }

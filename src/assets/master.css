@@ -1785,7 +1785,7 @@ display: block;
 .contact-details-box h4{
   color: var(--color-burg);
 }
-.plan-tab ul{
+.plan-tab>ul{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1794,11 +1794,11 @@ display: block;
   border: none;
 
 }
-.plan-tab ul li{
+.plan-tab>ul li{
   width: 33.33%;
   margin: 0;
 }
-.plan-tab ul a.nav-link{
+.plan-tab>ul a.nav-link{
   padding: 21px 0;
   color: var(--color-black);
   font-size: 14px;
@@ -1807,14 +1807,17 @@ display: block;
   border: none;
   text-align: center;
 }
-.plan-tab ul a.nav-link.active{
+.plan-tab>ul a.nav-link.active{
   color: var(--color-burg);
   border-bottom: 2px solid var(--color-burg);
 }
-.plan-tab-inner #pills-home{
-  display: flex;
+.plan-tab-inner{
+  margin-top: 2px;
 }
-.plan-tab-inner #pills-home .nav-tabs{
+.plan-tab-inner>.tab-pane.active{
+  display: flex !important;
+}
+.plan-tab-inner .tab-pane .nav-tabs{
   width: 37%;
     max-width: 100%;
     flex: 0 0 37%;
@@ -1824,11 +1827,11 @@ display: block;
     padding: 63px 0 63px 0;
     margin: 0;
 }
-.plan-tab-inner #pills-home .nav-tabs .nav-item{
+.plan-tab-inner .tab-pane .nav-tabs .nav-item{
    width: 100%;
    margin: 0 0 77px 0;
 }
-.plan-tab-inner #pills-home .nav-tabs .nav-link{
+.plan-tab-inner .tab-pane .nav-tabs .nav-link{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -1839,7 +1842,7 @@ display: block;
   padding-top: 88px;
   position: relative;
 }
-.plan-tab-inner #pills-home .nav-tabs .nav-link::before{
+.plan-tab-inner .tab-pane .nav-tabs .nav-link::before{
   content: '';
   position: absolute;
   top: 0;
@@ -1850,26 +1853,26 @@ display: block;
   background-size: cover;
   transform: translateX(-50%);
 }
-.plan-tab-inner #pills-home .nav-tabs .nav-link.active{
+.plan-tab-inner .tab-pane .nav-tabs .nav-link.active{
   opacity: 1;
 }
 
-.plan-tab-inner #pills-home .tab-content{
+.plan-tab-inner .tab-pane .tab-content{
    padding: 82px 11.11% 82px 10.11%;
    background-color: var(--primary-back);
 }
-.plan-tab-inner #pills-home .tab-content h3{
+.plan-tab-inner .tab-pane .tab-content h3{
  margin: 0 0 30px 0;
  font-size: 30px;
  color: var(--color-black);
 }
-.plan-tab-inner #pills-home .tab-content p{
+.plan-tab-inner .tab-pane .tab-content p{
   margin: 0 0 15px 0;
   font-size: 16px;
   line-height: 2em;
   color: #838383;
  }
- .plan-tab-inner #pills-home .tab-content p a{
+ .plan-tab-inner .tab-pane .tab-content a{
   margin: 0;
   font-size: 14px;
  letter-spacing: 4.62px;

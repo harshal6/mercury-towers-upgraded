@@ -16,15 +16,6 @@ query SINGLE_CONTENT_QUERY($id: ID!) {
       }
     }
     authorIp
-    banner {
-      bannerH1
-      bannerH2
-      fieldGroupName
-      heroImage {
-        __typename
-        id
-      }
-    }
     commentedOn {
       node {
         id

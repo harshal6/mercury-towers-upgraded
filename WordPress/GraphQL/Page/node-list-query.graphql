@@ -14,15 +14,6 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       }
       authorDatabaseId
       authorId
-      banner {
-        bannerH1
-        bannerH2
-        fieldGroupName
-        heroImage {
-          __typename
-          id
-        }
-      }
       bodyClasses
       wpChildren: children(first: 100) {
         nodes {
@@ -56,58 +47,6 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       }
       featuredImageDatabaseId
       featuredImageId
-      frontPageMeta {
-        banner {
-          description
-          fieldGroupName
-          image {
-            __typename
-            id
-          }
-          pageLink {
-            __typename
-            ... on Page {
-              id
-            }
-          }
-          pageLinkText
-          title
-        }
-        featuredPostsSection {
-          featuredPosts {
-            __typename
-            ... on Post {
-              id
-            }
-          }
-          fieldGroupName
-          heading
-        }
-        fieldGroupName
-        searchSection {
-          backgroundImage {
-            __typename
-            id
-          }
-          fieldGroupName
-          searchLabel
-          taxonomies {
-            id
-          }
-          taxonomyIconOne {
-            __typename
-            id
-          }
-          taxonomyIconThree {
-            __typename
-            id
-          }
-          taxonomyIconTwo {
-            __typename
-            id
-          }
-        }
-      }
       guid
       id
       isFrontPage
@@ -131,10 +70,6 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       }
       parentDatabaseId
       parentId
-      post_category {
-        fieldGroupName
-        postCategory
-      }
       seo {
         breadcrumbs {
           text
@@ -170,15 +105,6 @@ query NODE_LIST_QUERY($first: Int!, $after: String) {
       slug
       status
       template {
-        banner {
-          bannerH1
-          bannerH2
-          fieldGroupName
-          heroImage {
-            __typename
-            id
-          }
-        }
         templateName
         __typename
       }

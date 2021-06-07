@@ -55,10 +55,6 @@ query PREVIEW_QUERY($id: ID!) {
     modifiedGmt
     pingStatus
     pinged
-    post_category {
-      fieldGroupName
-      postCategory
-    }
     postFormats(first: 100) {
       nodes {
         id
@@ -104,15 +100,6 @@ query PREVIEW_QUERY($id: ID!) {
       }
     }
     template {
-      banner {
-        bannerH1
-        bannerH2
-        fieldGroupName
-        heroImage {
-          __typename
-          id
-        }
-      }
       templateName
       __typename
     }
